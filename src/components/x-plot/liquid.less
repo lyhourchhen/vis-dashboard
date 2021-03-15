@@ -1,0 +1,29 @@
+.ant-statistic {
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+
+  .ant-statistic-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 414px) {
+    .ant-statistic-content {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+// 对应暗黑主题
+body[data-theme='dark'] {
+  .ant-statistic-title {
+    color: rgba(255, 255, 255, 0.45);
+  }
+
+  .ant-statistic-content {
+    color: rgba(255, 255, 255, 0.65);
+  }
+}
+

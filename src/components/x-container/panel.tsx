@@ -19,8 +19,7 @@ export const XPanel: React.FC<XProps> = ({ attributes, children }) => {
   }, [attributes.layout]);
 
   const onLayoutChange = (newLayout: Layout[], allLayouts: Layouts) => {
-    // todo 发起请求保存
-    // console.log('layout', allLayouts);
+    // console.log('layout', newLayout, allLayouts);
   };
 
   if (_.isEmpty(layout)) {

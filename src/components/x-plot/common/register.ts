@@ -10,6 +10,7 @@ import { XArea } from '../area';
 import { XSankey } from '../sankey';
 import { XScatter } from '../scatter';
 import { XGauge } from '../gauge';
+import { XLiquid } from '../liquid';
 import { XStatistic } from '../statistic';
 
 /**
@@ -42,6 +43,7 @@ registerComponent('sankey', XSankey);
 registerComponent('scatter', XScatter);
 registerComponent('gauge', XGauge);
 registerComponent('statistic', XStatistic);
+registerComponent('liquid', XLiquid);
 
 /**
  * 容器，可以创建 react-grid-layout

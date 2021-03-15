@@ -15,7 +15,7 @@ type XGaugeProps = XComponentProps<GaugeAttributes>;
 export const XGauge: React.FC<XGaugeProps> = props => {
   const { attributes } = props;
 
-  const [options, updateConfig] = useState({ percent: null });
+  const [options, updateOptions] = useState({ percent: null });
   const [selectedIdx, changeSelectedIdx] = useState(0);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export const XGauge: React.FC<XGaugeProps> = props => {
         ],
       };
     }
-    updateConfig(_.assign({}, options, selectOptions, { theme, range }));
+    updateOptions(_.assign({}, options, selectOptions, { theme, range }));
   }, [attributes, selectedIdx]);
 
   return (
